@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sainath Fitness</title>
+</head>
+<link 
+rel="stylesheet" href="css/style.css">
+<style>
+    
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        height: 4544px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .left{
+        position: absolute;
+        left: 12px;
+        display: inline-block;
+        border: 2px solid red;
+        top: 20px;
+        
+    }
+
+    .mid{
+        display: block;
+        width : 45%;
+        border : 2px solid white;
+        color: white;
+        margin: 20px auto;
+        top: 20px;
+    }
+
+    .right{
+        position: absolute;
+        right: 12px;
+        display : inline-block;
+        border : 2px solid yellow;
+        top: 20px;
+        margin: 19px auto;
+    }
+     
+    .navbar li{
+        display: inline-block;
+
+    }
+     
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+
+    }
+
+    .navbar li a:hover, .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(70, 65, 65);
+
+    }
+    .left div {
+        text-align: center;
+        font-size: small;
+    }
+
+    .left img {
+        height: 82px;
+        width: 100px;
+        filter: invert(1);
+    }
+
+    .btn {
+        display: inline-block;
+        border: 1px solid white;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        padding: 3px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(56, 53, 53);
+    }
+
+    .container {
+        color: white;
+        border: 2px solid white;
+        padding: 12px 12px;
+        border-radius: 5px;
+        margin: 221px 729px;
+        width: 33%;
+
+    }
+
+    .container input{
+        display: block;
+        width: 372px;
+        text-align: center;
+        margin: 12px auto;
+        padding: 1px;
+        font-size: 19px;
+    }
+
+    .container h1 {
+        font-size: medium;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .container button {
+        display : block;
+        margin: 20px auto;
+        margin-bottom: 12px;
+        padding: 8px;
+    }
+
+</style>
+
+<body>
+    <header class="header"> 
+
+        <!-- left box for logo -->
+        <div class="left">
+           <img src="img/gym.jpeg" alt="">
+           <div>Sainath Fitness</div>
+        </div>
+
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for search box -->
+        <div class="right">
+            <div class="btn">Call us</div>
+            <div class="btn">Email us</div>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h1>Join the Best Gym of Hyderabad</h1>
+        <form action="noaction.php">
+            <input type="text" name="" placeholder="Enter your name">
+            <input type="text" name="" placeholder="Enter your Email">
+            <input type="text" name="" placeholder="Enter your Phone">
+            <input type="text" name="" placeholder="Enter your Age">
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</body>
+</html>
